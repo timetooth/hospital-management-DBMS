@@ -74,3 +74,33 @@ BEGIN
 END;
 /
 EXEC cancel_by_patient_id(1);
+
+-- Trigger to manage conflicts between scheduling appointments
+
+CREATE OR REPLACE TRIGGER check_appointment_availability
+BEFORE INSERT ON appointments
+FOR EACH ROW
+DECLARE
+    v_count NUMBER;
+BEGIN
+    SELECT COUNT(*)
+    INTO v_count
+    FROM appointments
+    WHERE doctor_id = :NEW.doctor_id
+    AND appointment_date = :NEW.appointment_date
+    AND app_time = :NEW.app_time;
+    IF v_count > 0 THEN
+        RAISE_APPLICATION_ERROR(-20001, 'Appointment scheduling conflict. The doctor is already booked at the specified date/time.');
+    END IF;
+END;
+/
+
+-- test trigger
+-- this will no work, will throw an error
+INSERT INTO appointments (appointment_id, patient_id, doctor_id, appointment_date, app_time, status)
+VALUES (21, 5, 103, TO_DATE('2024-05-07', 'YYYY-MM-DD'), TIMESTAMP '2024-05-07 10:00:00', 'UPC');
+
+-- this works fine
+
+INSERT INTO appointments (appointment_id, patient_id, doctor_id, appointment_date, app_time, status)
+VALUES (21, 5, 103, TO_DATE('2024-05-07', 'YYYY-MM-DD'), TIMESTAMP '2024-05-07 11:00:00', 'UPC');
