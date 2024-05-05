@@ -104,3 +104,15 @@ VALUES (21, 5, 103, TO_DATE('2024-05-07', 'YYYY-MM-DD'), TIMESTAMP '2024-05-07 1
 
 INSERT INTO appointments (appointment_id, patient_id, doctor_id, appointment_date, app_time, status)
 VALUES (21, 5, 103, TO_DATE('2024-05-07', 'YYYY-MM-DD'), TIMESTAMP '2024-05-07 11:00:00', 'UPC');
+
+-- Trigger to automatically update the status of an appointment when the appointment date is reached.
+
+CREATE OR REPLACE TRIGGER update_appointment_status
+BEFORE INSERT ON appointments
+FOR EACH ROW
+BEGIN
+    IF :NEW.appointment_date = SYSDATE THEN
+        :NEW.status := 'ATT';
+    END IF;
+END;
+/
