@@ -53,7 +53,7 @@ CREATE TABLE bills (
     bill_id NUMBER PRIMARY KEY,
     patient_id NUMBER NOT NULL REFERENCES patients(patient_id),
     bill_date DATE NOT NULL,
-    bill_type VARCHAR(3) CHECK(bill_type IN ('MED', 'OPD'),
+    bill_type VARCHAR(3) CHECK(bill_type IN ('MED', 'OPD')),
     amount NUMBER NOT NULL,
     status VARCHAR(6) CHECK(status IN ('PAID','UNPAID'))
 );
@@ -62,7 +62,7 @@ CREATE TABLE bills (
 CREATE TABLE medicines (
     medicine_id NUMBER PRIMARY KEY,
     medicine_name VARCHAR(20),
-    discount_percentage NUMBER NOT NULL CHECK (discount >= 0 AND discount <= 100),
+    discount_percentage NUMBER NOT NULL CHECK (discount_percentage >= 0 AND discount_percentage <= 100),
     qty NUMBER NOT NULL,
     price NUMBER NOT NULL
 );
