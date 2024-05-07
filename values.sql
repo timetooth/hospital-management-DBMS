@@ -1,34 +1,34 @@
 -- values for all the tables -enter in this particular order
 -- 10 values for patients table
-INSERT INTO patients (patient_id, first_name, last_name, phone_number, addr_street, addr_city, addr_state, patient_type) 
-VALUES (1, 'Rahul', 'Gupta', '9998887777', '123 Gandhi Road', 'Mumbai', 'Maharashtra', 'IN');
+INSERT INTO patients (patient_id, first_name, last_name, phone_number, addr_street, addr_city, addr_state) 
+VALUES (1, 'Rahul', 'Gupta', '9998887777', '123 Gandhi Road', 'Mumbai', 'Maharashtra');
 
-INSERT INTO patients (patient_id, first_name, last_name, phone_number, addr_street, addr_city, addr_state, patient_type) 
-VALUES (2, 'Priya', 'Patel', '8887776666', '456 Nehru Street', 'Delhi', 'Delhi', 'OUT');
+INSERT INTO patients (patient_id, first_name, last_name, phone_number, addr_street, addr_city, addr_state) 
+VALUES (2, 'Priya', 'Patel', '8887776666', '456 Nehru Street', 'Delhi', 'Delhi');
 
-INSERT INTO patients (patient_id, first_name, last_name, phone_number, addr_street, addr_city, addr_state, patient_type) 
-VALUES (3, 'Amit', 'Sharma', '7776665555', '789 Tagore Lane', 'Gandhinagar', 'Gujarat', 'IN');
+INSERT INTO patients (patient_id, first_name, last_name, phone_number, addr_street, addr_city, addr_state) 
+VALUES (3, 'Amit', 'Sharma', '7776665555', '789 Tagore Lane', 'Gandhinagar', 'Gujarat');
 
-INSERT INTO patients (patient_id, first_name, last_name, phone_number, addr_street, addr_city, addr_state, patient_type) 
-VALUES (4, 'Sneha', 'Singh', '6665554444', '321 Bose Avenue', 'Chennai', 'Tamil Nadu', 'IN');
+INSERT INTO patients (patient_id, first_name, last_name, phone_number, addr_street, addr_city, addr_state) 
+VALUES (4, 'Sneha', 'Singh', '6665554444', '321 Bose Avenue', 'Chennai', 'Tamil Nadu');
 
-INSERT INTO patients (patient_id, first_name, last_name, phone_number, addr_street, addr_city, addr_state, patient_type) 
-VALUES (5, 'Raj', 'Verma', '8554443333', '654 Thakur Street', 'Bangalore', 'Karnataka', 'OUT');
+INSERT INTO patients (patient_id, first_name, last_name, phone_number, addr_street, addr_city, addr_state) 
+VALUES (5, 'Raj', 'Verma', '8554443333', '654 Thakur Street', 'Bangalore', 'Karnataka');
 
-INSERT INTO patients (patient_id, first_name, last_name, phone_number, addr_street, addr_city, addr_state, patient_type) 
-VALUES (6, 'Neha', 'Jain', '7443332222', '987 Bose Lane', 'Hyderabad', 'Telangana', 'OUT');
+INSERT INTO patients (patient_id, first_name, last_name, phone_number, addr_street, addr_city, addr_state) 
+VALUES (6, 'Neha', 'Jain', '7443332222', '987 Bose Lane', 'Hyderabad', 'Telangana');
 
-INSERT INTO patients (patient_id, first_name, last_name, phone_number, addr_street, addr_city, addr_state, patient_type) 
-VALUES (7, 'Vivek', 'Mishra', '8332221111', '123 Nehru Road', 'Pune', 'Maharashtra', 'IN');
+INSERT INTO patients (patient_id, first_name, last_name, phone_number, addr_street, addr_city, addr_state) 
+VALUES (7, 'Vivek', 'Mishra', '8332221111', '123 Nehru Road', 'Pune', 'Maharashtra');
 
-INSERT INTO patients (patient_id, first_name, last_name, phone_number, addr_street, addr_city, addr_state, patient_type) 
-VALUES (8, 'Anjali', 'Yadav', '9221110000', '456 Patel Street', 'Ahmedabad', 'Gujarat', 'OUT');
+INSERT INTO patients (patient_id, first_name, last_name, phone_number, addr_street, addr_city, addr_state) 
+VALUES (8, 'Anjali', 'Yadav', '9221110000', '456 Patel Street', 'Ahmedabad', 'Gujarat');
 
-INSERT INTO patients (patient_id, first_name, last_name, phone_number, addr_street, addr_city, addr_state, patient_type) 
-VALUES (9, 'Suresh', 'Kumar', '9110009999', '789 Gandhi Lane', 'Jaipur', 'Rajasthan', 'IN');
+INSERT INTO patients (patient_id, first_name, last_name, phone_number, addr_street, addr_city, addr_state) 
+VALUES (9, 'Suresh', 'Kumar', '9110009999', '789 Gandhi Lane', 'Jaipur', 'Rajasthan');
 
-INSERT INTO patients (patient_id, first_name, last_name, phone_number, addr_street, addr_city, addr_state, patient_type) 
-VALUES (10, 'Meera', 'Shah', '9998888456', '321 Tagore Street', 'Lucknow', 'Uttar Pradesh', 'OUT');
+INSERT INTO patients (patient_id, first_name, last_name, phone_number, addr_street, addr_city, addr_state) 
+VALUES (10, 'Meera', 'Shah', '9998888456', '321 Tagore Street', 'Lucknow', 'Uttar Pradesh');
 
 select * from patients;
 -- 10 values for departments table
@@ -66,7 +66,7 @@ SELECT * FROM departments
 
 -- 20 values for doctors table
 INSERT INTO doctors (doctor_id, name, qualification, specialization, addr_street, addr_city, addr_state, dept_id)
-VALUES (101, 'Dr. Ramesh', 'MBBS', 'Cardiologist', '123 Gandhi Road', 'Mumbai', 'Maharashtra', 1);
+VALUES (101, 'Dr. Ramesh', 'MD', 'Cardiologist', '123 Gandhi Road', 'Mumbai', 'Maharashtra', 1);
 
 INSERT INTO doctors (doctor_id, name, qualification, specialization, addr_street, addr_city, addr_state, dept_id)
 VALUES (102, 'Dr. Suresh', 'MBBS', 'Neurologist', '456 Nehru Street', 'Delhi', 'Delhi', 2);
@@ -75,7 +75,7 @@ INSERT INTO doctors (doctor_id, name, qualification, specialization, addr_street
 VALUES (103, 'Dr. Mahesh', 'MBBS', 'Orthopedist', '789 Tagore Lane', 'Gandhinagar', 'Gujarat', 3);
 
 INSERT INTO doctors (doctor_id, name, qualification, specialization, addr_street, addr_city, addr_state, dept_id)
-VALUES (104, 'Dr. Rakesh', 'MBBS', 'Gynecologist', '321 Bose Avenue', 'Chennai', 'Tamil Nadu', 4);
+VALUES (104, 'Dr. Rakesh', 'MD', 'Gynecologist', '321 Bose Avenue', 'Chennai', 'Tamil Nadu', 4);
 
 INSERT INTO doctors (doctor_id, name, qualification, specialization, addr_street, addr_city, addr_state, dept_id)
 VALUES (105, 'Dr. Ritu', 'MBBS', 'Pediatrician', '654 Thakur Street', 'Bangalore', 'Karnataka', 5);
@@ -84,7 +84,7 @@ INSERT INTO doctors (doctor_id, name, qualification, specialization, addr_street
 VALUES (106, 'Dr. Rina', 'MBBS', 'Oncologist', '987 Bose Lane', 'Hyderabad', 'Telangana', 6);
 
 INSERT INTO doctors (doctor_id, name, qualification, specialization, addr_street, addr_city, addr_state, dept_id)
-VALUES (107, 'Dr. Rishi', 'MBBS', 'ENT Specialist', '123 Nehru Road', 'Pune', 'Maharashtra', 7);
+VALUES (107, 'Dr. Rishi', 'MD', 'ENT Specialist', '123 Nehru Road', 'Pune', 'Maharashtra', 7);
 
 INSERT INTO doctors (doctor_id, name, qualification, specialization, addr_street, addr_city, addr_state, dept_id)
 VALUES (108, 'Dr. Ruchi', 'MBBS', 'Dermatologist', '456 Patel Street', 'Ahmedabad', 'Gujarat', 8);
@@ -96,196 +96,183 @@ INSERT INTO doctors (doctor_id, name, qualification, specialization, addr_street
 VALUES (110, 'Dr. Rupali', 'MBBS', 'General Physician', '321 Tagore Street', 'Lucknow', 'Uttar Pradesh', 10);
 
 INSERT INTO doctors (doctor_id, name, qualification, specialization, addr_street, addr_city, addr_state, dept_id)
-VALUES (111, 'Dr. Rakesh', 'MBBS', 'Cardiologist', '123 Gandhi Road', 'Mumbai', 'Maharashtra', 1);
+VALUES (111, 'Dr. Rakesh', 'MD', 'Cardiologist', '123 Gandhi Road', 'Mumbai', 'Maharashtra', 1);
 
 INSERT INTO doctors (doctor_id, name, qualification, specialization, addr_street, addr_city, addr_state, dept_id)
-VALUES (112, 'Dr. Suresh', 'MBBS', 'Neurologist', '456 Nehru Street', 'Delhi', 'Delhi', 2);
+VALUES (112, 'Dr. Tina', 'MD', 'Cardiologist', '123 Nehru Road', 'Delhi', 'Delhi', 1);
 
 INSERT INTO doctors (doctor_id, name, qualification, specialization, addr_street, addr_city, addr_state, dept_id)
-VALUES (113, 'Dr. Mahesh', 'MBBS', 'Orthopedist', '789 Tagore Lane', 'Gandhinagar', 'Gujarat', 3);
+VALUES (113, 'Dr. Sujata', 'MD', 'Oncologist', '345 Patel Road', 'Gandhinagar', 'Gujarat', 6);
 
 INSERT INTO doctors (doctor_id, name, qualification, specialization, addr_street, addr_city, addr_state, dept_id)
-VALUES (114, 'Dr. Rakesh', 'MBBS', 'Gynecologist', '321 Bose Avenue', 'Chennai', 'Tamil Nadu', 4);
+VALUES (114, 'Dr. Leena', 'MD', 'Plastic Surgeon', '123 Sangat Street', 'Bathinda', 'Punjab', 11);
 
 INSERT INTO doctors (doctor_id, name, qualification, specialization, addr_street, addr_city, addr_state, dept_id)
-VALUES (115, 'Dr. Ritu', 'MBBS', 'Pediatrician', '654 Thakur Street', 'Bangalore', 'Karnataka', 5);
+VALUES (115, 'Dr. Raiv', 'MD', 'Orthopedist', '234 Zira Street', 'Chandigarh', 'Chandigarh', 3);
 
-INSERT INTO doctors (doctor_id, name, qualification, specialization, addr_street, addr_city, addr_state, dept_id)
-VALUES (116, 'Dr. Rina', 'MBBS', 'Oncologist', '987 Bose Lane', 'Hyderabad', 'Telangana', 6);
 
-INSERT INTO doctors (doctor_id, name, qualification, specialization, addr_street, addr_city, addr_state, dept_id)
-VALUES (117, 'Dr. Rishi', 'MBBS', 'ENT Specialist', '123 Nehru Road', 'Pune', 'Maharashtra', 7);
-
-INSERT INTO doctors (doctor_id, name, qualification, specialization, addr_street, addr_city, addr_state, dept_id)
-VALUES (118, 'Dr. Ruchi', 'MBBS', 'Dermatologist', '456 Patel Street', 'Ahmedabad', 'Gujarat', 8);
-
-INSERT INTO doctors (doctor_id, name, qualification, specialization, addr_street, addr_city, addr_state, dept_id)
-VALUES (119, 'Dr. Roshan', 'MBBS', 'Psychiatrist', '789 Gandhi Lane', 'Jaipur', 'Rajasthan', 9);
-
-INSERT INTO doctors (doctor_id, name, qualification, specialization, addr_street, addr_city, addr_state, dept_id)
-VALUES (120, 'Dr. Rupali', 'MBBS', 'General Physician', '321 Tagore Street', 'Lucknow', 'Uttar Pradesh', 10);
 
 SELECT * FROM doctors
 
--- 20 values for appointments table to put date we always use TO_DATE('YYYY-MM-DD', 'YYYY-MM-DD') dated must be between 2024-05-07 to 2024-05-09
+-- 20 values for appointments table to put date we alway12s use TO_DATE('YYYY-MM-DD', 'YYYY-MM-DD') dated must be between 2024-05-07 to 2024-05-09
 
 INSERT INTO appointments (appointment_id, patient_id, doctor_id, appointment_date, app_time, status)
-VALUES (1, 1, 101, TO_DATE('2024-05-07', 'YYYY-MM-DD'), TIMESTAMP '2024-05-07 08:00:00', 'UPC');
+VALUES (1, 1,12 101, TO_DATE('2024-05-07', 'YYYY-MM-DD'), TIMESTAMP '2024-05-07 08:00:00', 'UPC');
 
 INSERT INTO appointments (appointment_id, patient_id, doctor_id, appointment_date, app_time, status)
-VALUES (2, 2, 102, TO_DATE('2024-05-07', 'YYYY-MM-DD'), TIMESTAMP '2024-05-07 09:00:00', 'UPC');
+VALUES (2, 2,12 102, TO_DATE('2024-05-07', 'YYYY-MM-DD'), TIMESTAMP '2024-05-07 09:00:00', 'UPC');
 
 INSERT INTO appointments (appointment_id, patient_id, doctor_id, appointment_date, app_time, status)
-VALUES (3, 3, 103, TO_DATE('2024-05-07', 'YYYY-MM-DD'), TIMESTAMP '2024-05-07 10:00:00', 'UPC');
+VALUES (3, 3,12 103, TO_DATE('2024-05-07', 'YYYY-MM-DD'), TIMESTAMP '2024-05-07 10:00:00', 'UPC');
 
 INSERT INTO appointments (appointment_id, patient_id, doctor_id, appointment_date, app_time, status)
-VALUES (4, 4, 104, TO_DATE('2024-05-09', 'YYYY-MM-DD'), TIMESTAMP '2024-05-09 08:00:00', 'UPC');
+VALUES (4, 4,12 104, TO_DATE('2024-05-09', 'YYYY-MM-DD'), TIMESTAMP '2024-05-09 08:00:00', 'UPC');
 
 INSERT INTO appointments (appointment_id, patient_id, doctor_id, appointment_date, app_time, status)
-VALUES (5, 5, 105, TO_DATE('2024-05-07', 'YYYY-MM-DD'), TIMESTAMP '2024-05-07 11:00:00', 'UPC');
+VALUES (5, 5,12 105, TO_DATE('2024-05-07', 'YYYY-MM-DD'), TIMESTAMP '2024-05-07 11:00:00', 'UPC');
 
 INSERT INTO appointments (appointment_id, patient_id, doctor_id, appointment_date, app_time, status)
-VALUES (6, 6, 106, TO_DATE('2024-05-07', 'YYYY-MM-DD'), TIMESTAMP '2024-05-07 13:00:00', 'UPC');
+VALUES (6, 6,12 106, TO_DATE('2024-05-07', 'YYYY-MM-DD'), TIMESTAMP '2024-05-07 13:00:00', 'UPC');
 
 INSERT INTO appointments (appointment_id, patient_id, doctor_id, appointment_date, app_time, status)
-VALUES (7, 7, 107, TO_DATE('2024-05-09', 'YYYY-MM-DD'), TIMESTAMP '2024-05-09 10:00:00', 'UPC');
+VALUES (7, 7,12 107, TO_DATE('2024-05-09', 'YYYY-MM-DD'), TIMESTAMP '2024-05-09 10:00:00', 'UPC');
 
 INSERT INTO appointments (appointment_id, patient_id, doctor_id, appointment_date, app_time, status)
-VALUES (8, 8, 108, TO_DATE('2024-05-07', 'YYYY-MM-DD'), TIMESTAMP '2024-05-07 15:00:00', 'UPC');
+VALUES (8, 8,12 108, TO_DATE('2024-05-07', 'YYYY-MM-DD'), TIMESTAMP '2024-05-07 15:00:00', 'UPC');
 
 INSERT INTO appointments (appointment_id, patient_id, doctor_id, appointment_date, app_time, status)
-VALUES (9, 9, 109, TO_DATE('2024-05-07', 'YYYY-MM-DD'), TIMESTAMP '2024-05-07 16:00:00', 'UPC');
+VALUES (9, 9,12 109, TO_DATE('2024-05-07', 'YYYY-MM-DD'), TIMESTAMP '2024-05-07 16:00:00', 'UPC');
 
 INSERT INTO appointments (appointment_id, patient_id, doctor_id, appointment_date, app_time, status)
-VALUES (10, 10, 110, TO_DATE('2024-05-09', 'YYYY-MM-DD'), TIMESTAMP '2024-05-09 11:00:00', 'UPC');
+VALUES (10, 10,12 110, TO_DATE('2024-05-09', 'YYYY-MM-DD'), TIMESTAMP '2024-05-09 11:00:00', 'UPC');
 
 INSERT INTO appointments (appointment_id, patient_id, doctor_id, appointment_date, app_time, status)
-VALUES (11, 1, 111, TO_DATE('2024-05-08', 'YYYY-MM-DD'), TIMESTAMP '2024-05-08 08:00:00', 'UPC');
+VALUES (11, 1,12 111, TO_DATE('2024-05-08', 'YYYY-MM-DD'), TIMESTAMP '2024-05-08 08:00:00', 'UPC');
 
 INSERT INTO appointments (appointment_id, patient_id, doctor_id, appointment_date, app_time, status)
-VALUES (12, 2, 112, TO_DATE('2024-05-08', 'YYYY-MM-DD'), TIMESTAMP '2024-05-08 09:00:00', 'UPC');
+VALUES (12, 2,12 112, TO_DATE('2024-05-08', 'YYYY-MM-DD'), TIMESTAMP '2024-05-08 09:00:00', 'UPC');
 
 INSERT INTO appointments (appointment_id, patient_id, doctor_id, appointment_date, app_time, status)
-VALUES (13, 3, 113, TO_DATE('2024-05-08', 'YYYY-MM-DD'), TIMESTAMP '2024-05-08 10:00:00', 'UPC');
+VALUES (13, 3,12 113, TO_DATE('2024-05-08', 'YYYY-MM-DD'), TIMESTAMP '2024-05-08 10:00:00', 'UPC');
 
 INSERT INTO appointments (appointment_id, patient_id, doctor_id, appointment_date, app_time, status)
-VALUES (14, 4, 114, TO_DATE('2024-05-08', 'YYYY-MM-DD'), TIMESTAMP '2024-05-08 11:00:00', 'UPC');
+VALUES (14, 4,12 114, TO_DATE('2024-05-08', 'YYYY-MM-DD'), TIMESTAMP '2024-05-08 11:00:00', 'UPC');
 
 INSERT INTO appointments (appointment_id, patient_id, doctor_id, appointment_date, app_time, status)
-VALUES (15, 5, 115, TO_DATE('2024-05-08', 'YYYY-MM-DD'), TIMESTAMP '2024-05-08 12:00:00', 'UPC');
+VALUES (15, 5,12 115, TO_DATE('2024-05-08', 'YYYY-MM-DD'), TIMESTAMP '2024-05-08 12:00:00', 'UPC');
 
 INSERT INTO appointments (appointment_id, patient_id, doctor_id, appointment_date, app_time, status)
-VALUES (16, 6, 116, TO_DATE('2024-05-09', 'YYYY-MM-DD'), TIMESTAMP '2024-05-09 12:00:00', 'UPC');
+VALUES (16, 6,12 110, TO_DATE('2024-05-09', 'YYYY-MM-DD'), TIMESTAMP '2024-05-09 12:00:00', 'UPC');
 
 INSERT INTO appointments (appointment_id, patient_id, doctor_id, appointment_date, app_time, status)
-VALUES (17, 7, 117, TO_DATE('2024-05-08', 'YYYY-MM-DD'), TIMESTAMP '2024-05-08 13:00:00', 'UPC');
+VALUES (17, 7,12 103, TO_DATE('2024-05-08', 'YYYY-MM-DD'), TIMESTAMP '2024-05-08 13:00:00', 'UPC');
 
 INSERT INTO appointments (appointment_id, patient_id, doctor_id, appointment_date, app_time, status)
-VALUES (18, 8, 118, TO_DATE('2024-05-08', 'YYYY-MM-DD'), TIMESTAMP '2024-05-08 14:00:00', 'UPC');
+VALUES (18, 8,12 111, TO_DATE('2024-05-08', 'YYYY-MM-DD'), TIMESTAMP '2024-05-08 14:00:00', 'UPC');
 
 INSERT INTO appointments (appointment_id, patient_id, doctor_id, appointment_date, app_time, status)
-VALUES (19, 9, 119, TO_DATE('2024-05-08', 'YYYY-MM-DD'), TIMESTAMP '2024-05-08 15:00:00', 'UPC');
+VALUES (19, 9,12 109, TO_DATE('2024-05-08', 'YYYY-MM-DD'), TIMESTAMP '2024-05-08 15:00:00', 'UPC');
 
 INSERT INTO appointments (appointment_id, patient_id, doctor_id, appointment_date, app_time, status)
-VALUES (20, 10, 120, TO_DATE('2024-05-08', 'YYYY-MM-DD'), TIMESTAMP '2024-05-08 16:00:00', 'UPC');
+VALUES (20, 10,12 101, TO_DATE('2024-05-08', 'YYYY-MM-DD'), TIMESTAMP '2024-05-08 16:00:00', 'UPC');
 
 SELECT * FROM appointments ORDER BY appointment_date;
 
 -- 20 values for bills table
 
-INSERT INTO bills (bill_id, patient_id, date_bills, amount, status)
-VALUES (1, 1, TO_DATE('2024-05-07', 'YYYY-MM-DD'), 500, 'payed');
+INSERT INTO bills (bill_id, patient_id, date_bills, amount, bill_type, status)
+VALUES (121, 1, TO_DATE('2024-05-07', 'YYYY-MM-DD'), 500, 'Med','paid');
 
-INSERT INTO bills (bill_id, patient_id, date_bills, amount, status)
-VALUES (2, 2, TO_DATE('2024-05-07', 'YYYY-MM-DD'), 600, 'payed');
+INSERT INTO bills (bill_id, patient_id, date_bills, amount, bill_type, status)
+VALUES (122, 7, TO_DATE('2024-05-07', 'YYYY-MM-DD'), 600, 'Med','unpaid');
 
-INSERT INTO bills (bill_id, patient_id, date_bills, amount, status)
-VALUES (3, 3, TO_DATE('2024-05-07', 'YYYY-MM-DD'), 700, 'payed');
+INSERT INTO bills (bill_id, patient_id, date_bills, amount, bill_type, status)
+VALUES (123, 1, TO_DATE('2024-05-07', 'YYYY-MM-DD'), 700, 'Appointment','paid');
 
-INSERT INTO bills (bill_id, patient_id, date_bills, amount, status)
-VALUES (4, 4, TO_DATE('2024-05-09', 'YYYY-MM-DD'), 800, 'payed');
+INSERT INTO bills (bill_id, patient_id, date_bills, amount, bill_type, status)
+VALUES (124, 4, TO_DATE('2024-05-09', 'YYYY-MM-DD'), 800, 'Appointment','paid');
 
-INSERT INTO bills (bill_id, patient_id, date_bills, amount, status)
-VALUES (5, 5, TO_DATE('2024-05-07', 'YYYY-MM-DD'), 900, 'payed');
+INSERT INTO bills (bill_id, patient_id, date_bills, amount, bill_type, status)
+VALUES (125, 5, TO_DATE('2024-05-07', 'YYYY-MM-DD'), 900, 'Med','paid');
 
-INSERT INTO bills (bill_id, patient_id, date_bills, amount, status)
-VALUES (6, 6, TO_DATE('2024-05-07', 'YYYY-MM-DD'), 1000, 'payed');
+INSERT INTO bills (bill_id, patient_id, date_bills, amount, bill_type, status)
+VALUES (126, 6, TO_DATE('2024-05-07', 'YYYY-MM-DD'), 1000, 'Med','unpaid');
 
-INSERT INTO bills (bill_id, patient_id, date_bills, amount, status)
-VALUES (7, 7, TO_DATE('2024-05-09', 'YYYY-MM-DD'), 1100, 'payed');
+INSERT INTO bills (bill_id, patient_id, date_bills, amount, bill_type, status)
+VALUES (127, 3, TO_DATE('2024-05-09', 'YYYY-MM-DD'), 1100, 'Appointment','paid');
 
-INSERT INTO bills (bill_id, patient_id, date_bills, amount, status)
-VALUES (8, 8, TO_DATE('2024-05-07', 'YYYY-MM-DD'), 1200, 'payed');
+INSERT INTO bills (bill_id, patient_id, date_bills, amount, bill_type, status)
+VALUES (128, 8, TO_DATE('2024-05-07', 'YYYY-MM-DD'), 1200, 'Appointment','paid');
 
-INSERT INTO bills (bill_id, patient_id, date_bills, amount, status)
-VALUES (9, 9, TO_DATE('2024-05-07', 'YYYY-MM-DD'), 1300, 'payed');
+INSERT INTO bills (bill_id, patient_id, date_bills, amount, bill_type, status)
+VALUES (129, 3, TO_DATE('2024-05-07', 'YYYY-MM-DD'), 1300, 'Appointment','unpaid');
 
-INSERT INTO bills (bill_id, patient_id, date_bills, amount, status)
-VALUES (10, 10, TO_DATE('2024-05-09', 'YYYY-MM-DD'), 1400, 'payed');
+INSERT INTO bills (bill_id, patient_id, date_bills, amount, bill_type, status)
+VALUES (1012, 10, TO_DATE('2024-05-09', 'YYYY-MM-DD'), 1400, 'Med','paid');
 
-INSERT INTO bills (bill_id, patient_id, date_bills, amount, status)
-VALUES (11, 1, TO_DATE('2024-05-08', 'YYYY-MM-DD'), 1500, 'payed');
+INSERT INTO bills (bill_id, patient_id, date_bills, amount, bill_type, status)
+VALUES (1121, 9, TO_DATE('2024-05-08', 'YYYY-MM-DD'), 1500, 'Med','paid');
 
-INSERT INTO bills (bill_id, patient_id, date_bills, amount, status)
-VALUES (12, 2, TO_DATE('2024-05-08', 'YYYY-MM-DD'), 1600, 'payed');
+INSERT INTO bills (bill_id, patient_id, date_bills, amount, bill_type, status)
+VALUES (1122, 2, TO_DATE('2024-05-08', 'YYYY-MM-DD'), 1600, 'Med','paid');
 
-INSERT INTO bills (bill_id, patient_id, date_bills, amount, status)
-VALUES (13, 3, TO_DATE('2024-05-08', 'YYYY-MM-DD'), 1700, 'payed');
+INSERT INTO bills (bill_id, patient_id, date_bills, amount, bill_type, status)
+VALUES (1123, 3, TO_DATE('2024-05-08', 'YYYY-MM-DD'), 1700, 'Appointment','unpaid');
 
-INSERT INTO bills (bill_id, patient_id, date_bills, amount, status)
-VALUES (14, 4, TO_DATE('2024-05-08', 'YYYY-MM-DD'), 1800, 'payed');
+INSERT INTO bills (bill_id, patient_id, date_bills, amount, bill_type, status)
+VALUES (1124, 4, TO_DATE('2024-05-08', 'YYYY-MM-DD'), 1800, 'Appointment','paid');
 
-INSERT INTO bills (bill_id, patient_id, date_bills, amount, status)
-VALUES (15, 5, TO_DATE('2024-05-08', 'YYYY-MM-DD'), 1900, 'payed');
+INSERT INTO bills (bill_id, patient_id, date_bills, amount, bill_type, status)
+VALUES (1125, 5, TO_DATE('2024-05-08', 'YYYY-MM-DD'), 1900, 'Appointment','paid');
 
-INSERT INTO bills (bill_id, patient_id, date_bills, amount, status)
-VALUES (16, 6, TO_DATE('2024-05-09', 'YYYY-MM-DD'), 2000, 'payed');
+INSERT INTO bills (bill_id, patient_id, date_bills, amount, bill_type, status)
+VALUES (1126, 6, TO_DATE('2024-05-09', 'YYYY-MM-DD'), 2000, 'Med','paid');
 
-INSERT INTO bills (bill_id, patient_id, date_bills, amount, status)
-VALUES (17, 7, TO_DATE('2024-05-08', 'YYYY-MM-DD'), 2100, 'payed');
+INSERT INTO bills (bill_id, patient_id, date_bills, amount, bill_type, status)
+VALUES (1127, 7, TO_DATE('2024-05-08', 'YYYY-MM-DD'), 2100, 'Med','paid');
 
-INSERT INTO bills (bill_id, patient_id, date_bills, amount, status)
-VALUES (18, 8, TO_DATE('2024-05-08', 'YYYY-MM-DD'), 2200, 'payed');
+INSERT INTO bills (bill_id, patient_id, date_bills, amount, bill_type, status)
+VALUES (1128, 8, TO_DATE('2024-05-08', 'YYYY-MM-DD'), 2200, 'Med','unpaid');
 
-INSERT INTO bills (bill_id, patient_id, date_bills, amount, status)
-VALUES (19, 9, TO_DATE('2024-05-08', 'YYYY-MM-DD'), 2300, 'payed');
+INSERT INTO bills (bill_id, patient_id, date_bills, amount, bill_type, status)
+VALUES (1129, 5, TO_DATE('2024-05-08', 'YYYY-MM-DD'), 2300, 'Appointment','paid');
 
-INSERT INTO bills (bill_id, patient_id, date_bills, amount, status)
-VALUES (20, 10, TO_DATE('2024-05-08', 'YYYY-MM-DD'), 2400, 'payed');
+INSERT INTO bills (bill_id, patient_id, date_bills, amount, bill_type, status)
+VALUES (2012, 10, TO_DATE('2024-05-08', 'YYYY-MM-DD'), 2400, 'Appointment','unpaid');
 
 SELECT * FROM bills ORDER BY date_bills;
 
 -- 10 values for medicines table
 
 INSERT INTO medicines (medicine_id, med_name, discount, qty, price)
-VALUES (1, 'Crocin', 5, 100, 10);
+VALUES (1, 'Crocin', 10, 100, 30);
 
 INSERT INTO medicines (medicine_id, med_name, discount, qty, price)
-VALUES (2, 'Paracetamol', 10, 200, 20);
+VALUES (2, 'Paracetamol', 10, 100, 30);
 
 INSERT INTO medicines (medicine_id, med_name, discount, qty, price)
-VALUES (3, 'Aspirin', 15, 300, 30);
+VALUES (3, 'Aspirin', 15, 120, 30);
 
 INSERT INTO medicines (medicine_id, med_name, discount, qty, price)
-VALUES (4, 'Brufen', 20, 400, 40);
+VALUES (4, 'Ibuprofen', 15, 110, 30);
 
 INSERT INTO medicines (medicine_id, med_name, discount, qty, price)
-VALUES (5, 'Cetrizine', 25, 500, 50);
+VALUES (5, 'Cetrizine', 10, 100, 50);
 
 INSERT INTO medicines (medicine_id, med_name, discount, qty, price)
-VALUES (6, 'Azithromycin', 30, 600, 60);
+VALUES (6, 'Azithromycin', 10, 80, 120);
 
 INSERT INTO medicines (medicine_id, med_name, discount, qty, price)
-VALUES (7, 'Amoxicillin', 35, 700, 70);
+VALUES (7, 'Amoxicillin', 15, 50, 250);
 
 INSERT INTO medicines (medicine_id, med_name, discount, qty, price)
-VALUES (8, 'Dolo', 40, 800, 80);
+VALUES (8, 'Dolo', 10, 150, 30);
 
 INSERT INTO medicines (medicine_id, med_name, discount, qty, price)
-VALUES (9, 'Cough Syrup', 45, 900, 90);
+VALUES (9, 'Cough Syrup', 20, 20, 90);
 
 INSERT INTO medicines (medicine_id, med_name, discount, qty, price)
-VALUES (10, 'Vitamin C', 50, 1000, 100);
+VALUES (10, 'Vitamin C', 5, 60, 50);
 
 SELECT * FROM medicines;
 
