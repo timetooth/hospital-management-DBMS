@@ -71,8 +71,7 @@ CREATE TABLE prescriptions(
     medicine_id NUMBER REFERENCES medicines(medicine_id),
     appointment_id NUMBER REFERENCES appointments(appointment_id),
     qty NUMBER DEFAULT 1,
-    frequency NUMBER DEFAULT 1,
-    other_instructions VARCHAR(255)
+    frequency NUMBER DEFAULT 1
 );
 
 -- values for all the tables -enter in this particular order
