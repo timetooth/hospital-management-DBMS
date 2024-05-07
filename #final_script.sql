@@ -199,31 +199,31 @@ SELECT * FROM doctors;
 -- VALUES (1, 1, 101, TO_DATE('2024-05-07 16:00', 'YYYY-MM-DD HH24:MI'), 'The patient is found healthy', 'No treatment', 'UPC');
 
 INSERT INTO appointments
-VALUES (1, 1, 101, TO_DATE('2024-05-07 16:00', 'YYYY-MM-DD hh24:mi'), 'The patient is found healthy', 'No treatment','UPC');
+VALUES (1, 1, 101, TO_DATE('2024-05-07 16:00', 'YYYY-MM-DD hh24:mi'), 'The patient is found healthy', 'No treatment','ATT');
 
 INSERT INTO appointments
-VALUES (2, 2,  102, TO_DATE('2024-05-07 20:00', 'YYYY-MM-DD hh24:mi'), 'The patient has Diabetes', 'Insulin injection', 'UPC');
+VALUES (2, 2,  102, TO_DATE('2024-05-07 20:00', 'YYYY-MM-DD hh24:mi'), 'The patient has Diabetes', 'Insulin injection', 'ATT');
 
 INSERT INTO appointments
-VALUES (3, 3,  103, TO_DATE('2024-05-07 10:00', 'YYYY-MM-DD hh24:mi'), 'The patient has Diabetes', 'Insulin injection','UPC');
+VALUES (3, 3,  103, TO_DATE('2024-05-07 10:00', 'YYYY-MM-DD hh24:mi'), 'The patient has Diabetes', 'Insulin injection','NATT');
 
 INSERT INTO appointments
 VALUES (4, 4,  104, TO_DATE('2024-05-09 15:00', 'YYYY-MM-DD hh24:mi'), 'The patient is found healthy', 'No treatment','UPC');
 
 INSERT INTO appointments
-VALUES (5, 5,  105, TO_DATE('2024-05-07 09:00', 'YYYY-MM-DD hh24:mi'),'The patient is found healthy', 'No treatment', 'UPC');
+VALUES (5, 5,  105, TO_DATE('2024-05-07 09:00', 'YYYY-MM-DD hh24:mi'),'The patient is found healthy', 'No treatment', 'CAN');
 
 INSERT INTO appointments
-VALUES (6, 6,  106, TO_DATE('2024-05-07 17:00', 'YYYY-MM-DD hh24:mi'), 'The patient has a blocked vein', 'Surgery needed','UPC');
+VALUES (6, 6,  106, TO_DATE('2024-05-07 17:00', 'YYYY-MM-DD hh24:mi'), 'The patient has a blocked vein', 'Surgery needed','ATT');
 
 INSERT INTO appointments
 VALUES (7, 7,  107, TO_DATE('2024-05-09 11:00', 'YYYY-MM-DD hh24:mi'), 'The patient has Migraines', 'Medicine prescribed', 'UPC');
 
 INSERT INTO appointments
-VALUES (8, 8,  108, TO_DATE('2024-05-07 21:00', 'YYYY-MM-DD hh24:mi'),'The patient is found healthy', 'No treatment', 'UPC');
+VALUES (8, 8,  108, TO_DATE('2024-05-07 21:00', 'YYYY-MM-DD hh24:mi'),'The patient is found healthy', 'No treatment', 'NATT');
 
 INSERT INTO appointments
-VALUES (9, 9,  109, TO_DATE('2024-05-07 20:00', 'YYYY-MM-DD hh24:mi'), 'The patient has Diabetes', 'Insulin injection','UPC');
+VALUES (9, 9,  109, TO_DATE('2024-05-07 20:00', 'YYYY-MM-DD hh24:mi'), 'The patient has Diabetes', 'Insulin injection','ATT');
 
 INSERT INTO appointments
 VALUES (10, 10,  110, TO_DATE('2024-05-09 15:00', 'YYYY-MM-DD hh24:mi'), 'The patient is found healthy', 'No treatment','UPC');
