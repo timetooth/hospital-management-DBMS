@@ -199,64 +199,64 @@ SELECT * FROM doctors;
 -- VALUES (1, 1, 101, TO_DATE('2024-05-07 16:00', 'YYYY-MM-DD HH24:MI'), 'The patient is found healthy', 'No treatment', 'UPC');
 
 INSERT INTO appointments
-VALUES (1, 1, 101, TO_DATE('2024-05-07 16:00', 'YYYY-MM-DD hh24:mi'), 'The patient is found healthy', 'No treatment','ATT');
+VALUES (1, 1, 101, TO_DATE('2024-05-07 16:00', 'YYYY-MM-DD hh24:mi'), 'The patient is found healthy', 'Medicine prescribed','ATT');
 
 INSERT INTO appointments
 VALUES (2, 2,  102, TO_DATE('2024-05-07 20:00', 'YYYY-MM-DD hh24:mi'), 'The patient has Diabetes', 'Insulin injection', 'ATT');
 
 INSERT INTO appointments
-VALUES (3, 3,  103, TO_DATE('2024-05-07 10:00', 'YYYY-MM-DD hh24:mi'), 'The patient has Diabetes', 'Insulin injection','NATT');
+VALUES (3, 3,  103, TO_DATE('2024-05-07 10:00', 'YYYY-MM-DD hh24:mi'), '', '','NATT');
 
 INSERT INTO appointments
-VALUES (4, 4,  104, TO_DATE('2024-05-09 15:00', 'YYYY-MM-DD hh24:mi'), 'The patient is found healthy', 'No treatment','UPC');
+VALUES (4, 4,  104, TO_DATE('2024-05-09 15:00', 'YYYY-MM-DD hh24:mi'), '', '','UPC');
 
 INSERT INTO appointments
-VALUES (5, 5,  105, TO_DATE('2024-05-07 09:00', 'YYYY-MM-DD hh24:mi'),'The patient is found healthy', 'No treatment', 'CAN');
+VALUES (5, 5,  105, TO_DATE('2024-05-07 09:00', 'YYYY-MM-DD hh24:mi'),'', '', 'CAN');
 
 INSERT INTO appointments
 VALUES (6, 6,  106, TO_DATE('2024-05-07 17:00', 'YYYY-MM-DD hh24:mi'), 'The patient has a blocked vein', 'Surgery needed','ATT');
 
 INSERT INTO appointments
-VALUES (7, 7,  107, TO_DATE('2024-05-09 11:00', 'YYYY-MM-DD hh24:mi'), 'The patient has Migraines', 'Medicine prescribed', 'UPC');
+VALUES (7, 7,  107, TO_DATE('2024-05-09 11:00', 'YYYY-MM-DD hh24:mi'), '', '', 'UPC');
 
 INSERT INTO appointments
-VALUES (8, 8,  108, TO_DATE('2024-05-07 21:00', 'YYYY-MM-DD hh24:mi'),'The patient is found healthy', 'No treatment', 'NATT');
+VALUES (8, 8,  108, TO_DATE('2024-05-07 21:00', 'YYYY-MM-DD hh24:mi'),'', '', 'NATT');
 
 INSERT INTO appointments
 VALUES (9, 9,  109, TO_DATE('2024-05-07 20:00', 'YYYY-MM-DD hh24:mi'), 'The patient has Diabetes', 'Insulin injection','ATT');
 
 INSERT INTO appointments
-VALUES (10, 10,  110, TO_DATE('2024-05-09 15:00', 'YYYY-MM-DD hh24:mi'), 'The patient is found healthy', 'No treatment','UPC');
+VALUES (10, 10,  110, TO_DATE('2024-05-09 15:00', 'YYYY-MM-DD hh24:mi'), '', '','UPC');
 
 INSERT INTO appointments
-VALUES (11, 1,  111, TO_DATE('2024-05-08 10:00', 'YYYY-MM-DD hh24:mi'), 'The patient is found healthy', 'No treatment', 'UPC');
+VALUES (11, 1,  111, TO_DATE('2024-05-08 10:00', 'YYYY-MM-DD hh24:mi'), '', '', 'UPC');
 
 INSERT INTO appointments
-VALUES (12, 2, 112, TO_DATE('2024-05-08 15:00', 'YYYY-MM-DD hh24:mi'), 'The patient has Diabetes', 'Insulin injection','UPC');
+VALUES (12, 2, 112, TO_DATE('2024-05-08 15:00', 'YYYY-MM-DD hh24:mi'), '', '','UPC');
 
 INSERT INTO appointments
-VALUES (13, 3, 113, TO_DATE('2024-05-08 10:00', 'YYYY-MM-DD hh24:mi'), 'The patient has Migraines', 'Medicine prescribed','UPC');
+VALUES (13, 3, 113, TO_DATE('2024-05-07 10:00', 'YYYY-MM-DD hh24:mi'), 'The patient has Migraines', 'Medicine prescribed','ATT');
 
 INSERT INTO appointments
-VALUES (14, 4, 114, TO_DATE('2024-05-08 11:00', 'YYYY-MM-DD hh24:mi'), 'The patient is found healthy', 'No treatment','UPC');
+VALUES (14, 4, 114, TO_DATE('2024-05-08 11:00', 'YYYY-MM-DD hh24:mi'), '', '','UPC');
 
 INSERT INTO appointments
-VALUES (15, 5, 115, TO_DATE('2024-05-08 12:00', 'YYYY-MM-DD hh24:mi'), 'The patient is found healthy', 'No treatment','UPC');
+VALUES (15, 5, 115, TO_DATE('2024-05-08 12:00', 'YYYY-MM-DD hh24:mi'), '', '','UPC');
 
 INSERT INTO appointments
-VALUES (16, 6, 110, TO_DATE('2024-05-09 16:00', 'YYYY-MM-DD hh24:mi'), 'The patient is found healthy', 'No treatment','UPC');
+VALUES (16, 6, 110, TO_DATE('2024-05-07 16:00', 'YYYY-MM-DD hh24:mi'), 'The patient is found healthy', 'No treatment','ATT');
 
 INSERT INTO appointments
-VALUES (17, 7, 103, TO_DATE('2024-05-08 14:00', 'YYYY-MM-DD hh24:mi'), 'The patient has Migraines', 'Medicine prescribed','UPC');
+VALUES (17, 7, 103, TO_DATE('2024-05-07 14:00', 'YYYY-MM-DD hh24:mi'), 'The patient has Migraines', 'Medicine prescribed','ATT');
 
 INSERT INTO appointments
-VALUES (18, 8, 111, TO_DATE('2024-05-08 17:00', 'YYYY-MM-DD hh24:mi'), 'The patient is found healthy', 'No treatment','UPC');
+VALUES (18, 8, 111, TO_DATE('2024-05-08 17:00', 'YYYY-MM-DD hh24:mi'), '', '','UPC');
 
 INSERT INTO appointments
-VALUES (19, 9, 109, TO_DATE('2024-05-08 18:00', 'YYYY-MM-DD hh24:mi'), 'The patient has Migraines', 'Medicine prescribed','UPC');
+VALUES (19, 9, 109, TO_DATE('2024-05-08 18:00', 'YYYY-MM-DD hh24:mi'), '', '','UPC');
 
 INSERT INTO appointments
-VALUES (20, 10, 101, TO_DATE('2024-05-08 19:00', 'YYYY-MM-DD hh24:mi'), 'The patient is found healthy', 'No treatment','UPC');
+VALUES (20, 10, 101, TO_DATE('2024-05-08 19:00', 'YYYY-MM-DD hh24:mi'), '', '','UPC');
 
 -- SELECT * FROM appointments ORDER BY appointment_date;
 
@@ -272,7 +272,7 @@ INSERT INTO bills
 VALUES (123, 1, TO_DATE('2024-05-07', 'YYYY-MM-DD'), 700, 'APT','PAID');
 
 INSERT INTO bills
-VALUES (124, 4, TO_DATE('2024-05-09', 'YYYY-MM-DD'), 800, 'APT','PAID');
+VALUES (124, 4, TO_DATE('2024-05-06', 'YYYY-MM-DD'), 800, 'APT','PAID');
 
 INSERT INTO bills
 VALUES (125, 5, TO_DATE('2024-05-07', 'YYYY-MM-DD'), 900, 'MED','PAID');
@@ -281,48 +281,46 @@ INSERT INTO bills
 VALUES (126, 6, TO_DATE('2024-05-07', 'YYYY-MM-DD'), 1000, 'MED','UNPAID');
 
 INSERT INTO bills
-VALUES (127, 3, TO_DATE('2024-05-09', 'YYYY-MM-DD'), 1100, 'APT','PAID');
+VALUES (127, 3, TO_DATE('2024-05-04', 'YYYY-MM-DD'), 1100, 'APT','PAID');
 
 INSERT INTO bills
-VALUES (128, 8, TO_DATE('2024-05-07', 'YYYY-MM-DD'), 1200, 'APT','PAID');
+VALUES (128, 8, TO_DATE('2024-05-04', 'YYYY-MM-DD'), 1200, 'APT','PAID');
 
 INSERT INTO bills
-VALUES (129, 3, TO_DATE('2024-05-07', 'YYYY-MM-DD'), 1300, 'APT','UNPAID');
+VALUES (129, 3, TO_DATE('2024-05-06', 'YYYY-MM-DD'), 1300, 'APT','UNPAID');
 
 INSERT INTO bills
-VALUES (130, 10, TO_DATE('2024-05-09', 'YYYY-MM-DD'), 1400, 'MED','PAID');
+VALUES (130, 10, TO_DATE('2024-05-05', 'YYYY-MM-DD'), 1400, 'MED','PAID');
 
 INSERT INTO bills
-VALUES (131, 9, TO_DATE('2024-05-08', 'YYYY-MM-DD'), 1500, 'MED','PAID');
+VALUES (131, 9, TO_DATE('2024-05-04', 'YYYY-MM-DD'), 1500, 'MED','PAID');
 
 INSERT INTO bills
-VALUES (132, 2, TO_DATE('2024-05-08', 'YYYY-MM-DD'), 1600, 'MED','PAID');
+VALUES (132, 2, TO_DATE('2024-05-06', 'YYYY-MM-DD'), 1600, 'MED','PAID');
 
 INSERT INTO bills
-VALUES (133, 3, TO_DATE('2024-05-08', 'YYYY-MM-DD'), 1700, 'APT','UNPAID');
+VALUES (133, 3, TO_DATE('2024-05-04', 'YYYY-MM-DD'), 1700, 'APT','UNPAID');
 
 INSERT INTO bills
-VALUES (134, 4, TO_DATE('2024-05-08', 'YYYY-MM-DD'), 1800, 'APT','PAID');
+VALUES (134, 4, TO_DATE('2024-05-05', 'YYYY-MM-DD'), 1800, 'APT','PAID');
 
 INSERT INTO bills
-VALUES (135, 5, TO_DATE('2024-05-08', 'YYYY-MM-DD'), 1900, 'APT','PAID');
+VALUES (135, 5, TO_DATE('2024-05-05', 'YYYY-MM-DD'), 1900, 'APT','PAID');
 
 INSERT INTO bills
-VALUES (136, 6, TO_DATE('2024-05-09', 'YYYY-MM-DD'), 2000, 'MED','PAID');
+VALUES (136, 6, TO_DATE('2024-05-06', 'YYYY-MM-DD'), 2000, 'MED','PAID');
 
 INSERT INTO bills
-VALUES (137, 7, TO_DATE('2024-05-08', 'YYYY-MM-DD'), 2100, 'MED','PAID');
+VALUES (137, 7, TO_DATE('2024-05-05', 'YYYY-MM-DD'), 2100, 'MED','PAID');
 
 INSERT INTO bills
-VALUES (138, 8, TO_DATE('2024-05-08', 'YYYY-MM-DD'), 2200, 'MED','UNPAID');
+VALUES (138, 8, TO_DATE('2024-05-05', 'YYYY-MM-DD'), 2200, 'MED','UNPAID');
 
 INSERT INTO bills
-VALUES (139, 5, TO_DATE('2024-05-08', 'YYYY-MM-DD'), 2300, 'APT','PAID');
+VALUES (139, 5, TO_DATE('2024-05-06', 'YYYY-MM-DD'), 2300, 'APT','PAID');
 
 INSERT INTO bills
-VALUES (140, 10, TO_DATE('2024-05-08', 'YYYY-MM-DD'), 2400, 'APT','UNPAID');
-
--- SELECT * FROM bills ORDER BY date_bills;
+VALUES (140, 10, TO_DATE('2024-05-04', 'YYYY-MM-DD'), 2400, 'APT','UNPAID');
 
 -- 10 values for medicines table
 
@@ -367,13 +365,13 @@ INSERT INTO prescriptions
 VALUES (2, 2, 5, 1);
 
 INSERT INTO prescriptions
-VALUES (3, 14, 4, 2);
+VALUES (3, 13, 4, 2);
 
 INSERT INTO prescriptions
-VALUES (4, 5, 5, 3);
+VALUES (4, 1, 5, 3);
 
 INSERT INTO prescriptions
-VALUES (5, 5, 6, 1);
+VALUES (5, 1, 6, 1);
 
 INSERT INTO prescriptions
 VALUES (6, 9, 8, 1);
@@ -391,13 +389,13 @@ INSERT INTO prescriptions
 VALUES (10, 9, 4, 1);
 
 INSERT INTO prescriptions
-VALUES (1, 14, 4, 1);
+VALUES (1, 13, 4, 1);
 
 INSERT INTO prescriptions
-VALUES (2, 12, 4, 2);
+VALUES (2, 6, 4, 2);
 
 INSERT INTO prescriptions
-VALUES (3, 14, 6, 3);
+VALUES (3, 13, 6, 3);
 
 INSERT INTO prescriptions
 VALUES (4, 18, 5, 3);
@@ -409,15 +407,15 @@ INSERT INTO prescriptions
 VALUES (6, 15, 7, 1);
 
 INSERT INTO prescriptions
-VALUES (7, 18, 8, 2);
+VALUES (7, 17, 8, 2);
 
 INSERT INTO prescriptions
-VALUES (8, 18, 9, 2);
+VALUES (8, 17, 9, 2);
 
 INSERT INTO prescriptions
-VALUES (9, 19, 10, 2);
+VALUES (9, 16, 10, 2);
 
 INSERT INTO prescriptions
-VALUES (10, 15, 11, 2);
+VALUES (10, 16, 11, 2);
 
 -- SELECT * FROM prescriptions ORDER BY appointment_id;
