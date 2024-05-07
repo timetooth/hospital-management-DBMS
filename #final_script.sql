@@ -53,8 +53,8 @@ CREATE TABLE bills (
     bill_id NUMBER PRIMARY KEY,
     patient_id NUMBER NOT NULL REFERENCES patients(patient_id),
     bill_date DATE NOT NULL,
-    bill_type VARCHAR(3) CHECK(bill_type IN ('MED', 'APT')),
     amount NUMBER NOT NULL,
+    bill_type VARCHAR(3) CHECK(bill_type IN ('MED', 'APT')),
     status VARCHAR(6) CHECK(status IN ('PAID','UNPAID'))
 );
 
