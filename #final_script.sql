@@ -244,7 +244,7 @@ INSERT INTO appointments
 VALUES (15, 5, 115, TO_DATE('2024-05-08 12:00', 'YYYY-MM-DD hh24:mi'), 'The patient is found healthy', 'No treatment','UPC');
 
 INSERT INTO appointments
-VALUES (16, 6, 110, TO_DATE('2024-05-0916:00', 'YYYY-MM-DD hh24:mi'), 'The patient is found healthy', 'No treatment','UPC');
+VALUES (16, 6, 110, TO_DATE('2024-05-09 16:00', 'YYYY-MM-DD hh24:mi'), 'The patient is found healthy', 'No treatment','UPC');
 
 INSERT INTO appointments
 VALUES (17, 7, 103, TO_DATE('2024-05-08 14:00', 'YYYY-MM-DD hh24:mi'), 'The patient has Migraines', 'Medicine prescribed','UPC');
@@ -258,7 +258,7 @@ VALUES (19, 9, 109, TO_DATE('2024-05-08 18:00', 'YYYY-MM-DD hh24:mi'), 'The pati
 INSERT INTO appointments
 VALUES (20, 10, 101, TO_DATE('2024-05-08 19:00', 'YYYY-MM-DD hh24:mi'), 'The patient is found healthy', 'No treatment','UPC');
 
-SELECT * FROM appointments ORDER BY appointment_date;
+-- SELECT * FROM appointments ORDER BY appointment_date;
 
 -- 20 values for bills table
 
@@ -322,7 +322,7 @@ VALUES (139, 5, TO_DATE('2024-05-08', 'YYYY-MM-DD'), 2300, 'APT','paid');
 INSERT INTO bills
 VALUES (140, 10, TO_DATE('2024-05-08', 'YYYY-MM-DD'), 2400, 'APT','unpaid');
 
-SELECT * FROM bills ORDER BY date_bills;
+-- SELECT * FROM bills ORDER BY date_bills;
 
 -- 10 values for medicines table
 
@@ -420,4 +420,4 @@ VALUES (9, 19, 10, 2);
 INSERT INTO prescriptions
 VALUES (10, 15, 11, 2);
 
-SELECT * FROM prescriptions ORDER BY appointment_id;
+-- SELECT * FROM prescriptions ORDER BY appointment_id;
