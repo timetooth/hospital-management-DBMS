@@ -279,7 +279,7 @@ SELECT * FROM medicines;
 -- 20 values for prescriptions table
 
 INSERT INTO prescriptions (medicine_id, appointment_id, quantity, frequency)
-VALUES (1, 1, 2, 2);
+VALUES (1, 2, 2, 2);
 
 INSERT INTO prescriptions (medicine_id, appointment_id, quantity, frequency)
 VALUES (2, 2, 5, 1);
@@ -288,7 +288,7 @@ INSERT INTO prescriptions (medicine_id, appointment_id, quantity, frequency)
 VALUES (3, 3, 4, 2);
 
 INSERT INTO prescriptions (medicine_id, appointment_id, quantity, frequency)
-VALUES (4, 4, 5, 3);
+VALUES (4, 5, 5, 3);
 
 INSERT INTO prescriptions (medicine_id, appointment_id, quantity, frequency)
 VALUES (5, 5, 6, 1);
@@ -297,7 +297,7 @@ INSERT INTO prescriptions (medicine_id, appointment_id, quantity, frequency)
 VALUES (6, 6, 8, 1);
 
 INSERT INTO prescriptions (medicine_id, appointment_id, quantity, frequency)
-VALUES (7, 7, 8, 3);
+VALUES (7, 6, 8, 3);
 
 INSERT INTO prescriptions (medicine_id, appointment_id, quantity, frequency)
 VALUES (8, 8, 9, 2);
@@ -306,7 +306,7 @@ INSERT INTO prescriptions (medicine_id, appointment_id, quantity, frequency)
 VALUES (9, 9, 5, 1);
 
 INSERT INTO prescriptions (medicine_id, appointment_id, quantity, frequency)
-VALUES (10, 10, 4, 1);
+VALUES (10, 9, 4, 1);
 
 INSERT INTO prescriptions (medicine_id, appointment_id, quantity, frequency)
 VALUES (1, 11, 4, 1);
@@ -315,19 +315,19 @@ INSERT INTO prescriptions (medicine_id, appointment_id, quantity, frequency)
 VALUES (2, 12, 4, 2);
 
 INSERT INTO prescriptions (medicine_id, appointment_id, quantity, frequency)
-VALUES (3, 13, 6, 3);
+VALUES (3, 14, 6, 3);
 
 INSERT INTO prescriptions (medicine_id, appointment_id, quantity, frequency)
 VALUES (4, 14, 5, 3);
 
 INSERT INTO prescriptions (medicine_id, appointment_id, quantity, frequency)
-VALUES (5, 15, 6, 2);
+VALUES (5, 2, 6, 2);
 
 INSERT INTO prescriptions (medicine_id, appointment_id, quantity, frequency)
-VALUES (6, 16, 7, 1);
+VALUES (6, 15, 7, 1);
 
 INSERT INTO prescriptions (medicine_id, appointment_id, quantity, frequency)
-VALUES (7, 17, 8, 2);
+VALUES (7, 18, 8, 2);
 
 INSERT INTO prescriptions (medicine_id, appointment_id, quantity, frequency)
 VALUES (8, 18, 9, 2);
@@ -336,6 +336,7 @@ INSERT INTO prescriptions (medicine_id, appointment_id, quantity, frequency)
 VALUES (9, 19, 10, 2);
 
 INSERT INTO prescriptions (medicine_id, appointment_id, quantity, frequency)
-VALUES (10, 20, 11, 2);
+VALUES (10, 15, 11, 2);
+
 
 SELECT * FROM prescriptions ORDER BY appointment_id;
