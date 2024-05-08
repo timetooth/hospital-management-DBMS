@@ -205,43 +205,43 @@ INSERT INTO appointments
 VALUES (2, 2,  102, TO_DATE('2024-05-07 20:00', 'YYYY-MM-DD hh24:mi'), 'The patient has Diabetes', 'Insulin injection', 'ATT');
 
 INSERT INTO appointments
-VALUES (3, 3,  103, TO_DATE('2024-05-07 10:00', 'YYYY-MM-DD hh24:mi'), '', '','NATT');
+VALUES (3, 3,  103, TO_DATE('2024-05-07 10:00', 'YYYY-MM-DD hh24:mi'), ' ', ' ','NATT');
 
 INSERT INTO appointments
-VALUES (4, 4,  104, TO_DATE('2024-05-09 15:00', 'YYYY-MM-DD hh24:mi'), '', '','UPC');
+VALUES (4, 4,  104, TO_DATE('2024-05-09 15:00', 'YYYY-MM-DD hh24:mi'), ' ', ' ','UPC');
 
 INSERT INTO appointments
-VALUES (5, 5,  105, TO_DATE('2024-05-07 09:00', 'YYYY-MM-DD hh24:mi'),'', '', 'CAN');
+VALUES (5, 5,  105, TO_DATE('2024-05-07 09:00', 'YYYY-MM-DD hh24:mi'),' ', ' ', 'CAN');
 
 INSERT INTO appointments
 VALUES (6, 6,  106, TO_DATE('2024-05-07 17:00', 'YYYY-MM-DD hh24:mi'), 'The patient has a blocked vein', 'Surgery needed','ATT');
 
 INSERT INTO appointments
-VALUES (7, 7,  107, TO_DATE('2024-05-09 11:00', 'YYYY-MM-DD hh24:mi'), '', '', 'UPC');
+VALUES (7, 7,  107, TO_DATE('2024-05-09 11:00', 'YYYY-MM-DD hh24:mi'), ' ', ' ', 'UPC');
 
 INSERT INTO appointments
-VALUES (8, 8,  108, TO_DATE('2024-05-07 21:00', 'YYYY-MM-DD hh24:mi'),'', '', 'NATT');
+VALUES (8, 8,  108, TO_DATE('2024-05-07 21:00', 'YYYY-MM-DD hh24:mi'),' ', ' ', 'NATT');
 
 INSERT INTO appointments
 VALUES (9, 9,  109, TO_DATE('2024-05-07 20:00', 'YYYY-MM-DD hh24:mi'), 'The patient has Diabetes', 'Insulin injection','ATT');
 
 INSERT INTO appointments
-VALUES (10, 10,  110, TO_DATE('2024-05-09 15:00', 'YYYY-MM-DD hh24:mi'), '', '','UPC');
+VALUES (10, 10,  110, TO_DATE('2024-05-09 15:00', 'YYYY-MM-DD hh24:mi'), ' ', ' ','UPC');
 
 INSERT INTO appointments
-VALUES (11, 1,  111, TO_DATE('2024-05-08 10:00', 'YYYY-MM-DD hh24:mi'), '', '', 'UPC');
+VALUES (11, 1,  111, TO_DATE('2024-05-08 10:00', 'YYYY-MM-DD hh24:mi'), ' ', ' ', 'UPC');
 
 INSERT INTO appointments
-VALUES (12, 2, 112, TO_DATE('2024-05-08 15:00', 'YYYY-MM-DD hh24:mi'), '', '','UPC');
+VALUES (12, 2, 112, TO_DATE('2024-05-08 15:00', 'YYYY-MM-DD hh24:mi'), ' ', ' ','UPC');
 
 INSERT INTO appointments
 VALUES (13, 3, 113, TO_DATE('2024-05-07 10:00', 'YYYY-MM-DD hh24:mi'), 'The patient has Migraines', 'Medicine prescribed','ATT');
 
 INSERT INTO appointments
-VALUES (14, 4, 114, TO_DATE('2024-05-08 11:00', 'YYYY-MM-DD hh24:mi'), '', '','UPC');
+VALUES (14, 4, 114, TO_DATE('2024-05-08 11:00', 'YYYY-MM-DD hh24:mi'), ' ', ' ','UPC');
 
 INSERT INTO appointments
-VALUES (15, 5, 115, TO_DATE('2024-05-08 12:00', 'YYYY-MM-DD hh24:mi'), '', '','UPC');
+VALUES (15, 5, 115, TO_DATE('2024-05-08 12:00', 'YYYY-MM-DD hh24:mi'), ' ', ' ','UPC');
 
 INSERT INTO appointments
 VALUES (16, 6, 110, TO_DATE('2024-05-07 16:00', 'YYYY-MM-DD hh24:mi'), 'The patient is found healthy', 'No treatment','ATT');
@@ -250,13 +250,13 @@ INSERT INTO appointments
 VALUES (17, 7, 103, TO_DATE('2024-05-07 14:00', 'YYYY-MM-DD hh24:mi'), 'The patient has Migraines', 'Medicine prescribed','ATT');
 
 INSERT INTO appointments
-VALUES (18, 8, 111, TO_DATE('2024-05-08 17:00', 'YYYY-MM-DD hh24:mi'), '', '','UPC');
+VALUES (18, 8, 111, TO_DATE('2024-05-08 17:00', 'YYYY-MM-DD hh24:mi'), ' ', ' ','UPC');
 
 INSERT INTO appointments
-VALUES (19, 9, 109, TO_DATE('2024-05-08 18:00', 'YYYY-MM-DD hh24:mi'), '', '','UPC');
+VALUES (19, 9, 109, TO_DATE('2024-05-08 18:00', 'YYYY-MM-DD hh24:mi'), ' ', ' ','UPC');
 
 INSERT INTO appointments
-VALUES (20, 10, 101, TO_DATE('2024-05-08 19:00', 'YYYY-MM-DD hh24:mi'), '', '','UPC');
+VALUES (20, 10, 101, TO_DATE('2024-05-08 19:00', 'YYYY-MM-DD hh24:mi'), ' ', ' ','UPC');
 
 -- SELECT * FROM appointments ORDER BY appointment_date;
 
