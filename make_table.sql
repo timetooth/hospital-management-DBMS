@@ -7,7 +7,6 @@ CREATE TABLE patients(
     addr_street VARCHAR(50),
     addr_city VARCHAR(50),
     addr_state VARCHAR(30) CONSTRAINT patient_state_constraint CHECK(addr_state IN ('Andhra Pradesh', 'Arunachal Pradesh', 'Assam', 'Bihar', 'Chhattisgarh', 'Goa', 'Gujarat', 'Haryana', 'Himachal Pradesh', 'Jharkhand', 'Karnataka', 'Kerala', 'Maharashtra', 'Madhya Pradesh', 'Manipur', 'Meghalaya', 'Mizoram', 'Nagaland', 'Odisha', 'Punjab', 'Rajasthan', 'Sikkim', 'Tamil Nadu', 'Tripura', 'Telangana', 'Uttar Pradesh', 'Uttarakhand', 'West Bengal','Andaman and Nicobar Islands', 'Chandigarh', 'Dadra and Nagar Haveli and Daman and Diu', 'Delhi', 'Jammu and Kashmir', 'Ladakh', 'Lakshadweep', 'Puducherry')),
-	patient_type VARCHAR(3) CONSTRAINT patient_type_constraint CHECK(patient_type IN ('IN', 'OUT'))
 );
 
 --department table
@@ -47,7 +46,8 @@ CREATE TABLE bills (
     patient_id NUMBER NOT NULL,
     date_bills DATE,
     amount NUMBER NOT NULL,
-    status VARCHAR(20) CHECK(status IN ('payed','unpaid')),
+    bill_type VARCHAR(20) CHECK(bill_type IN ('Med', 'Appointment')) NOT NULL,
+    status VARCHAR(20) CHECK(status IN ('paid','unpaid')),
     FOREIGN KEY (patient_id) REFERENCES Patients(patient_id) ON DELETE CASCADE
 );
 
